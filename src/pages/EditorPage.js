@@ -1,9 +1,7 @@
 import React,{useState,useRef,useEffect} from 'react'
 import Client from '../components/Client';
 import ACTIONS from "../Actions";
-import CodeMirror from '@uiw/react-codemirror';
-import { cpp } from '@codemirror/lang-cpp';
-import { oneDark } from '@codemirror/theme-one-dark';
+
 import { initSocket } from '../socket';
 import {useLocation,useNavigate,Navigate,useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';

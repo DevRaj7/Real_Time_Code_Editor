@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {v4 as uuidv4} from 'uuid';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
-import ParticleBackground from './ParticleBackground';
+
 const Home = () => {
     const navigate=useNavigate();
     const [roomId,setRoomId]=useState('');
@@ -28,7 +28,7 @@ const Home = () => {
     });
 };
 const handleinputenter=(e)=>{
-    if(e.code=='Enter'){
+    if(e.code==='Enter'){
         joinroom();
     }
 };
