@@ -3,17 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@codemirror/lang-cpp": "^0.20.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "@uiw/react-codemirror": "^4.7.0",
+    "ace-builds": "^1.4.14",
+    "codemirror": "^5.65.3",
+    "express": "^4.18.1",
+    "prismjs": "^1.28.0",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
+    "react-ace": "^10.1.0",
+    "react-avatar": "^4.0.0",
     "react-dom": "^18.1.0",
+    "react-hot-toast": "^2.2.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.0.6",
+    "socket.io": "^4.5.0",
+    "socket.io-client": "^4.5.0",
+    "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run build && npm server:prod",
+    "start:front": "react-scripts start",
     "build": "react-scripts build",
+    "server:dev": "nodemon server.js",
+    "server:prod": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
